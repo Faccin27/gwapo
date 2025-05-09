@@ -77,7 +77,8 @@ const translations: TranslationsType = {
     // Contact Section
     "contact-title": "Get In Touch",
     "contact-subtitle": "Let's create something amazing together",
-    "contact-description": "Whether you need a new website, a brand refresh, or automation solutions, we're here to help. Reach out to us and let's start the conversation.",
+    "contact-description":
+      "Whether you need a new website, a brand refresh, or automation solutions, we're here to help. Reach out to us and let's start the conversation.",
     "contact-name": "Name",
     "contact-email": "Email",
     "contact-phone": "Phone",
@@ -86,6 +87,12 @@ const translations: TranslationsType = {
     "contact-location": "Location",
     "contact-message": "Message",
     "contact-send": "Send Message",
+
+    // Footer
+    "footer-rights": "All rights reserved",
+    "footer-privacy": "Privacy Policy",
+    "footer-terms": "Terms of Service",
+    "footer-text": "Transforming ideas into digital excellence. We create stunning websites, craft unique visual identities, and implement powerful automation solutions.",
   },
   pt: {
     // Navbar
@@ -157,7 +164,8 @@ const translations: TranslationsType = {
     // Contact Section
     "contact-title": "Entre em Contato",
     "contact-subtitle": "Vamos criar algo incrível juntos",
-    "contact-description": "Se você precisa de um novo site, uma atualização de marca ou soluções de automação, estamos aqui para ajudar. Entre em contato conosco e vamos começar a conversa.",
+    "contact-description":
+      "Se você precisa de um novo site, uma atualização de marca ou soluções de automação, estamos aqui para ajudar. Entre em contato conosco e vamos começar a conversa.",
     "contact-name": "Nome",
     "contact-phone": "Telefone",
     "contact-location": "Localização",
@@ -166,6 +174,12 @@ const translations: TranslationsType = {
     "contact-subject-text": "Como podemos ajudar?",
     "contact-message": "Mensagem",
     "contact-send": "Enviar Mensagem",
+
+    // Footer
+    "footer-rights": "Todos os direitos reservados",
+    "footer-privacy": "Política de Privacidade",
+    "footer-terms": "Termos de Serviço",
+    "footer-text": "Transformando ideias em excelência digital. Criamos sites incríveis, criamos identidades visuais únicas e implementamos soluções de automação poderosas.",
   },
 };
 
