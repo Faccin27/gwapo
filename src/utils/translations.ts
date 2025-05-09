@@ -67,6 +67,12 @@ const translations: TranslationsType = {
       "We take pride in delivering exceptional digital experiences that help our clients succeed. Here are some of our recent projects.",
     "view-project": "View Project",
     "view-all-projects": "View All Projects",
+
+    // Ready Made Sites
+    "ready-made-title": "Ready-Made Websites",
+    "ready-made-subtitle": "Quick and affordable solutions",
+    "ready-made-desc":
+      "Our pre-built templates are perfect for businesses that want a professional online presence without the full custom design price.",
   },
   pt: {
     // Navbar
@@ -129,6 +135,12 @@ const translations: TranslationsType = {
       "Temos orgulho em oferecer experiências digitais excepcionais que ajudam nossos clientes a alcançar o sucesso. Aqui estão alguns dos nossos projetos recentes.",
     "view-project": "Ver Projeto",
     "view-all-projects": "Ver todos os projetos",
+
+    // Ready Made Sites
+    "ready-made-title": "Sites Pré-prontos",
+    "ready-made-subtitle": "Soluções rápidas e acessíveis",
+    "ready-made-desc":
+      "Nossos templates pré-construídos são perfeitos para empresas que desejam uma presença online profissional sem o preço total de um design personalizado.",
   },
 };
 

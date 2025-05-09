@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ProcessSection from "@/components/ProcessSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import ReadyMadeSites from "@/components/ReadyMadeSites";
 import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
       <ServicesSection />
       <ProcessSection />
       <ProjectsSection />
-
+      <ReadyMadeSites />
     </>
   );
 }
