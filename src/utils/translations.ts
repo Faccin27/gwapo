@@ -26,10 +26,23 @@ const translations: TranslationsType = {
     "hero-learn-more": "Learn More",
 
     // before/after section
-    "before": "BEFORE",
-    "after": "AFTER",
+    before: "BEFORE",
+    after: "AFTER",
     "before/after-title": "See Our Transformation",
-    "before/after-description": "Drag the slider to see how we transform outdated designs into modern, beautiful websites.",
+    "before/after-description":
+      "Drag the slider to see how we transform outdated designs into modern, beautiful websites.",
+
+    // Services Section
+    "services-title": "Our Services",
+    "services-subtitle": "Comprehensive digital solutions for your business",
+    "service-web-title": "Web Development",
+    "service-web-desc":
+      "Complete websites and landing pages tailored to your needs",
+    "service-identity-title": "Visual Identity",
+    "service-identity-desc":
+      "Brand design that captures your essence and connects with your audience",
+    "service-rpa-title": "RPA Solutions",
+    "service-rpa-desc": "Automate repetitive tasks and improve efficiency",
   },
   pt: {
     // Navbar
@@ -49,10 +62,23 @@ const translations: TranslationsType = {
     "hero-learn-more": "Saiba Mais",
 
     // before/after section
-    "before": "ANTES",
-    "after": "DEPOIS",
+    before: "ANTES",
+    after: "DEPOIS",
     "before/after-title": "Veja Nossa Transformação",
-    "before/after-description": "Arraste o slider para ver como transformamos designs antigos em modernos e belos sites",
+    "before/after-description":
+      "Arraste o slider para ver como transformamos designs antigos em modernos e belos sites",
+
+    // Services Section
+    "services-title": "Nossos Serviços",
+    "services-subtitle": "Soluções digitais abrangentes para o seu negócio",
+    "service-web-title": "Desenvolvimento Web",
+    "service-web-desc":
+      "Sites completos e landing pages adaptados às suas necessidades",
+    "service-identity-title": "Identidade Visual",
+    "service-identity-desc":
+      "Design de marca que captura sua essência e conecta com seu público",
+    "service-rpa-title": "Soluções RPA",
+    "service-rpa-desc": "Automatize tarefas repetitivas e melhore a eficiência",
   },
 };
 

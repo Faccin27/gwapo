@@ -1,6 +1,7 @@
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         afterImage="/images/nakai.png"
         height="600px"
       />
+      <ServicesSection />
     </>
   );
 }
