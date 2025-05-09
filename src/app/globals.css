@@ -92,13 +92,15 @@
   }
 
   body.smooth-scroll::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome, Safari, Opera */
   }
 
+  /* Dark theme styles */
   .dark-theme {
     @apply bg-gray-900 text-gray-100;
   }
 
+  /* Neo Glassmorphism */
   .neo-glass {
     @apply backdrop-blur-2xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)];
   }
@@ -107,10 +109,12 @@
     @apply backdrop-blur-xl bg-white/10 border border-white/10 shadow-lg;
   }
 
+  /* Gradient text */
   .text-gradient {
-    @apply bg-gradient-to-r from-gwapo-light via-gwapo to-gwapo-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-fixteam-light via-fixteam to-fixteam-dark bg-clip-text text-transparent;
   }
 
+  /* For the before-after slider */
   .before-after-slider {
     position: relative;
     overflow: hidden;
@@ -132,6 +136,7 @@
     clip-path: inset(0 50% 0 0);
   }
 
+  /* Enhanced slider divider for scroll-controlled slider */
   .slider-divider {
     position: absolute;
     top: 0;
@@ -140,8 +145,33 @@
     background-color: white;
     z-index: 3;
     transform: translateX(-50%);
+    cursor: ew-resize;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: left 0.1s ease-out;
+  }
+
+  .slider-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .slider-divider::after {
+    content: "⇆";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0096ff;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .animate-circuit {
