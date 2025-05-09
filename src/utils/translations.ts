@@ -43,6 +43,22 @@ const translations: TranslationsType = {
       "Brand design that captures your essence and connects with your audience",
     "service-rpa-title": "RPA Solutions",
     "service-rpa-desc": "Automate repetitive tasks and improve efficiency",
+
+    // Process Section
+    "process-title": "Our Process",
+    "process-subtitle": "How we transform your ideas into reality",
+    "process-step1": "Understanding",
+    "process-step1-desc": "We learn about your business, goals, and vision",
+    "process-step2": "Research",
+    "process-step2-desc": "Analyzing market trends and competitive landscape",
+    "process-step3": "Proposals",
+    "process-step3-desc": "Creating concept designs and strategic solutions",
+    "process-step4": "Development",
+    "process-step4-desc": "Building your project with precision and care",
+    "process-step5": "Delivery",
+    "process-step5-desc": "Launching your project with comprehensive testing",
+    "process-step6": "Support",
+    "process-step6-desc": "Ongoing assistance to ensure continued success",
   },
   pt: {
     // Navbar
@@ -79,6 +95,24 @@ const translations: TranslationsType = {
       "Design de marca que captura sua essência e conecta com seu público",
     "service-rpa-title": "Soluções RPA",
     "service-rpa-desc": "Automatize tarefas repetitivas e melhore a eficiência",
+
+    // Process Section
+    "process-title": "Nosso Processo",
+    "process-subtitle": "Como transformamos suas ideias em realidade",
+    "process-step1": "Entendimento",
+    "process-step1-desc": "Conhecemos seu negócio, objetivos e visão",
+    "process-step2": "Pesquisa",
+    "process-step2-desc":
+      "Analisando tendências de mercado e cenário competitivo",
+    "process-step3": "Propostas",
+    "process-step3-desc": "Criando designs conceituais e soluções estratégicas",
+    "process-step4": "Desenvolvimento",
+    "process-step4-desc": "Construindo seu projeto com precisão e cuidado",
+    "process-step5": "Entrega",
+    "process-step5-desc": "Lançamento do projeto com testes abrangentes",
+    "process-step6": "Suporte",
+    "process-step6-desc":
+      "Assistência contínua para garantir sucesso prolongado",
   },
 };
 

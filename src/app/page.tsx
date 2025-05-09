@@ -1,6 +1,7 @@
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import ProcessSection from "@/components/ProcessSection";
 import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         height="600px"
       />
       <ServicesSection />
+      <ProcessSection />
     </>
   );
 }
