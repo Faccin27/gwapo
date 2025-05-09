@@ -59,6 +59,14 @@ const translations: TranslationsType = {
     "process-step5-desc": "Launching your project with comprehensive testing",
     "process-step6": "Support",
     "process-step6-desc": "Ongoing assistance to ensure continued success",
+
+    // projects section
+    "projects-title": "Our Projects",
+    "projects-subtitle": "See what we've accomplished",
+    "projects-description":
+      "We take pride in delivering exceptional digital experiences that help our clients succeed. Here are some of our recent projects.",
+    "view-project": "View Project",
+    "view-all-projects": "View All Projects",
   },
   pt: {
     // Navbar
@@ -113,6 +121,14 @@ const translations: TranslationsType = {
     "process-step6": "Suporte",
     "process-step6-desc":
       "Assistência contínua para garantir sucesso prolongado",
+
+    // Projects Section
+    "projects-title": "Nossos Projetos",
+    "projects-subtitle": "Veja o que já realizamos",
+    "projects-description":
+      "Temos orgulho em oferecer experiências digitais excepcionais que ajudam nossos clientes a alcançar o sucesso. Aqui estão alguns dos nossos projetos recentes.",
+    "view-project": "Ver Projeto",
+    "view-all-projects": "Ver todos os projetos",
   },
 };
 
