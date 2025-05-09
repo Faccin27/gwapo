@@ -1,4 +1,5 @@
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ProcessSection from "@/components/ProcessSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <ProcessSection />
       <ProjectsSection />
       <ReadyMadeSites />
+      <ContactSection />
     </>
   );
 }

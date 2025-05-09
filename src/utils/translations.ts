@@ -73,6 +73,19 @@ const translations: TranslationsType = {
     "ready-made-subtitle": "Quick and affordable solutions",
     "ready-made-desc":
       "Our pre-built templates are perfect for businesses that want a professional online presence without the full custom design price.",
+
+    // Contact Section
+    "contact-title": "Get In Touch",
+    "contact-subtitle": "Let's create something amazing together",
+    "contact-description": "Whether you need a new website, a brand refresh, or automation solutions, we're here to help. Reach out to us and let's start the conversation.",
+    "contact-name": "Name",
+    "contact-email": "Email",
+    "contact-phone": "Phone",
+    "contact-subject": "Subject",
+    "contact-subject-text": "How can we help?",
+    "contact-location": "Location",
+    "contact-message": "Message",
+    "contact-send": "Send Message",
   },
   pt: {
     // Navbar
@@ -141,6 +154,18 @@ const translations: TranslationsType = {
     "ready-made-subtitle": "Soluções rápidas e acessíveis",
     "ready-made-desc":
       "Nossos templates pré-construídos são perfeitos para empresas que desejam uma presença online profissional sem o preço total de um design personalizado.",
+    // Contact Section
+    "contact-title": "Entre em Contato",
+    "contact-subtitle": "Vamos criar algo incrível juntos",
+    "contact-description": "Se você precisa de um novo site, uma atualização de marca ou soluções de automação, estamos aqui para ajudar. Entre em contato conosco e vamos começar a conversa.",
+    "contact-name": "Nome",
+    "contact-phone": "Telefone",
+    "contact-location": "Localização",
+    "contact-email": "Email",
+    "contact-subject": "Assunto",
+    "contact-subject-text": "Como podemos ajudar?",
+    "contact-message": "Mensagem",
+    "contact-send": "Enviar Mensagem",
   },
 };
 
