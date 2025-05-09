@@ -22,7 +22,6 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <SocialIcon href="#" icon="facebook" />
-              <SocialIcon href="#" icon="twitter" />
               <SocialIcon href="#" icon="instagram" />
               <SocialIcon href="#" icon="linkedin" />
             </div>
