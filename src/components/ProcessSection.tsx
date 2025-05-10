@@ -48,8 +48,8 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ number, title, description, i
         line,
         { height: "0%" },
         {
-          height: "100%",
-          duration: 1,
+          height: "150%",
+          duration: 2,
           delay: index * 0.2 + 0.4,
           ease: "power3.inOut",
           scrollTrigger: {

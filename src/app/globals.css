@@ -111,7 +111,7 @@
 
   /* Gradient text */
   .text-gradient {
-    @apply bg-gradient-to-r from-fixteam-light via-fixteam to-fixteam-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gwapo-light via-gwapo to-gwapo-dark bg-clip-text text-transparent;
   }
 
   /* For the before-after slider */

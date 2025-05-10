@@ -1,9 +1,10 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-import { useLanguage } from '@/context/LanguageContext';
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/context/LanguageContext";
+import Link from "next/link";
 
 interface NavbarProps {
   activeSection?: string;
@@ -20,8 +21,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMobileMenu = () => {
@@ -29,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
   };
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'pt' : 'en');
+    setLanguage(language === "en" ? "pt" : "en");
   };
 
   const handleNavigation = (sectionId: string) => {
@@ -42,120 +43,124 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled 
-          ? 'bg-gray-900/90 backdrop-blur-md border-b border-white/10 py-2' 
-          : 'bg-transparent py-4'
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled
+          ? "bg-gray-900/90 backdrop-blur-md border-b border-white/10 py-2"
+          : "bg-transparent py-4"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <img 
-            src="/images/logo.png" 
-            alt="Gwapo Logo" 
-            className="h-32 w-32" 
-          />
-          <h2 className='text-white text-2xl font-bold'>GW<span className='text-gwapo'>APO</span></h2>
-        </div>
+        <Link href="/">
+          <div className="flex items-center">
+            <img
+              src="/images/logo.png"
+              alt="Gwapo Logo"
+              className="h-32 w-32"
+            />
+            <h2 className="text-white text-2xl font-bold">
+              GW<span className="text-gwapo">APO</span>
+            </h2>
+          </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
-          <a 
-            href="#home" 
-            onClick={() => handleNavigation('home')} 
+          <a
+            href="#home"
+            onClick={() => handleNavigation("home")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'home' && "text-gwapo font-medium"
+              activeSection === "home" && "text-gwapo font-medium"
             )}
           >
-            {t('home')}
+            {t("home")}
           </a>
-          <a 
-            href="#before-after" 
-            onClick={() => handleNavigation('before-after')} 
+          <a
+            href="#before-after"
+            onClick={() => handleNavigation("before-after")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'before-after' && "text-gwapo font-medium"
+              activeSection === "before-after" && "text-gwapo font-medium"
             )}
           >
-            {t('before-after')}
+            {t("before-after")}
           </a>
-          <a 
-            href="#services" 
-            onClick={() => handleNavigation('services')} 
+          <a
+            href="#services"
+            onClick={() => handleNavigation("services")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'services' && "text-gwapo font-medium"
+              activeSection === "services" && "text-gwapo font-medium"
             )}
           >
-            {t('services')}
+            {t("services")}
           </a>
-          <a 
-            href="#process" 
-            onClick={() => handleNavigation('process')} 
+          <a
+            href="#process"
+            onClick={() => handleNavigation("process")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'process' && "text-gwapo font-medium"
+              activeSection === "process" && "text-gwapo font-medium"
             )}
           >
-            {t('process')}
+            {t("process")}
           </a>
-          <a 
-            href="#projects" 
-            onClick={() => handleNavigation('projects')} 
+          <a
+            href="#projects"
+            onClick={() => handleNavigation("projects")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'projects' && "text-gwapo font-medium"
+              activeSection === "projects" && "text-gwapo font-medium"
             )}
           >
-            {t('projects')}
+            {t("projects")}
           </a>
-          <a 
-            href="#ready-sites" 
-            onClick={() => handleNavigation('ready-sites')} 
+          <a
+            href="#ready-sites"
+            onClick={() => handleNavigation("ready-sites")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'ready-sites' && "text-gwapo font-medium"
+              activeSection === "ready-sites" && "text-gwapo font-medium"
             )}
           >
-            {t('ready')}
+            {t("ready")}
           </a>
-          <a 
-            href="#contact" 
-            onClick={() => handleNavigation('contact')} 
+          <a
+            href="#contact"
+            onClick={() => handleNavigation("contact")}
             className={cn(
               "text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'contact' && "text-gwapo font-medium"
+              activeSection === "contact" && "text-gwapo font-medium"
             )}
           >
-            {t('contact')}
+            {t("contact")}
           </a>
-          <Button 
+          <Button
             className="bg-gwapo-gradient hover:opacity-90 transition-opacity"
-            onClick={() => handleNavigation('contact')}
+            onClick={() => handleNavigation("contact")}
           >
-            {t('get-quote')}
+            {t("get-quote")}
           </Button>
-          <Button 
-            variant="outline" 
-            className="border-white/20 text-white hover:bg-white/10" 
+          <Button
+            variant="outline"
+            className="border-white/20 text-white hover:bg-white/10"
             onClick={toggleLanguage}
           >
-            {language === 'en' ? 'PT' : 'EN'}
+            {language === "en" ? "PT" : "EN"}
           </Button>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center space-x-2">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="sm"
-            className="border-white/20 text-white hover:bg-white/10 mr-2" 
+            className="border-white/20 text-white hover:bg-white/10 mr-2"
             onClick={toggleLanguage}
           >
-            {language === 'en' ? 'PT' : 'EN'}
+            {language === "en" ? "PT" : "EN"}
           </Button>
-          <button 
+          <button
             className="text-gray-200 focus:outline-none"
             onClick={toggleMobileMenu}
           >
@@ -189,86 +194,86 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          'md:hidden fixed inset-0 bg-gray-900/95 backdrop-blur-lg z-40 transition-transform duration-300 ease-in-out pt-20',
-          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          "md:hidden fixed inset-0 bg-gray-900/95 backdrop-blur-lg z-40 transition-transform duration-300 ease-in-out pt-20",
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="container mx-auto px-4 py-8 flex flex-col space-y-6">
-          <a 
-            href="#home" 
+          <a
+            href="#home"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'home' && "text-gwapo"
+              activeSection === "home" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('home')}
+            onClick={() => handleNavigation("home")}
           >
-            {t('home')}
+            {t("home")}
           </a>
-          <a 
-            href="#before-after" 
+          <a
+            href="#before-after"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'before-after' && "text-gwapo"
+              activeSection === "before-after" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('before-after')}
+            onClick={() => handleNavigation("before-after")}
           >
-            {t('before-after')}
+            {t("before-after")}
           </a>
-          <a 
-            href="#services" 
+          <a
+            href="#services"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'services' && "text-gwapo"
+              activeSection === "services" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('services')}
+            onClick={() => handleNavigation("services")}
           >
-            {t('services')}
+            {t("services")}
           </a>
-          <a 
-            href="#process" 
+          <a
+            href="#process"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'process' && "text-gwapo"
+              activeSection === "process" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('process')}
+            onClick={() => handleNavigation("process")}
           >
-            {t('process')}
+            {t("process")}
           </a>
-          <a 
-            href="#projects" 
+          <a
+            href="#projects"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'projects' && "text-gwapo"
+              activeSection === "projects" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('projects')}
+            onClick={() => handleNavigation("projects")}
           >
-            {t('projects')}
+            {t("projects")}
           </a>
-          <a 
-            href="#ready-sites" 
+          <a
+            href="#ready-sites"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'ready-sites' && "text-gwapo"
+              activeSection === "ready-sites" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('ready-sites')}
+            onClick={() => handleNavigation("ready-sites")}
           >
-            {t('ready-sites')}
+            {t("ready-sites")}
           </a>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className={cn(
               "text-xl font-medium text-gray-200 hover:text-gwapo transition-colors",
-              activeSection === 'contact' && "text-gwapo"
+              activeSection === "contact" && "text-gwapo"
             )}
-            onClick={() => handleNavigation('contact')}
+            onClick={() => handleNavigation("contact")}
           >
-            {t('contact')}
+            {t("contact")}
           </a>
-          <Button 
+          <Button
             className="bg-gwapo-gradient hover:opacity-90 transition-opacity w-full"
-            onClick={() => handleNavigation('contact')}
+            onClick={() => handleNavigation("contact")}
           >
-            {t('get-quote')}
+            {t("get-quote")}
           </Button>
         </div>
       </div>
