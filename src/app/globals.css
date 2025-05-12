@@ -104,6 +104,7 @@
     @apply antialiased;
   }
 
+  
   body {
     font-family: "Poppins", sans-serif;
     @apply bg-background text-foreground;
@@ -118,15 +119,13 @@
   }
 
   body.smooth-scroll::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none; 
   }
 
-  /* Dark theme styles */
   .dark-theme {
     @apply bg-gray-900 text-gray-100;
   }
 
-  /* Neo Glassmorphism */
   .neo-glass {
     @apply backdrop-blur-2xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)];
   }
@@ -135,12 +134,10 @@
     @apply backdrop-blur-xl bg-white/10 border border-white/10 shadow-lg;
   }
 
-  /* Gradient text */
   .text-gradient {
     @apply bg-gradient-to-r from-gwapo-light via-gwapo to-gwapo-dark bg-clip-text text-transparent;
   }
 
-  /* For the before-after slider */
   .before-after-slider {
     position: relative;
     overflow: hidden;
@@ -162,7 +159,6 @@
     clip-path: inset(0 50% 0 0);
   }
 
-  /* Enhanced slider divider for scroll-controlled slider */
   .slider-divider {
     position: absolute;
     top: 0;
@@ -216,7 +212,6 @@
     }
   }
 
-  /* GSAP animation classes */
   .reveal {
     opacity: 0;
     visibility: hidden;
