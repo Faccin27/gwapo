@@ -1,5 +1,5 @@
-import AdminLayout from "@/components/AdminLayout"
-import AdminSEO from "@/components/AdminSEO"
+import AdminLayout from "@/components/admin/AdminLayout"
+import AdminSEO from "@/components/admin/AdminSEO"
 
 export default function SEOPage() {
   return (

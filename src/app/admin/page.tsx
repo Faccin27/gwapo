@@ -1,5 +1,5 @@
-import AdminDashboard from "@/components/AdminDashboard";
-import AdminLayout from "@/components/AdminLayout";
+import AdminDashboard from "@/components/admin/AdminDashboard";
+import AdminLayout from "@/components/admin/AdminLayout";
 
 export default function Admin() {
   return (
