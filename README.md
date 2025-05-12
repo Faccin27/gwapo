@@ -110,5 +110,5 @@ Para sugestões ou colaborações:
 
 ## 🧾 Licença
 
-Este projeto é de uso livre para fins educacionais e não comerciais.
-
+Este projeto é **propriedade intelectual de seu autor** e está disponível **exclusivamente para fins de estudo e leitura de código**.
+**Não é permitido** o uso, modificação, redistribuição ou comercialização deste código sem autorização expressa do autor.
